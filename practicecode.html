@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Challenge Exercise</title>
+    <style>
+      .uber-btn{
+        background-color: black;
+        color: white;
+        height: 36px;
+        width: 115px;
+        margin-left: 15px;
+        transition: opacity 0.15s;
+      }
+
+      .uber-btn:hover {
+        opacity: 0.7;
+      }
+
+      .amazon-btn{
+        background-color: rgb(255, 216, 20);
+        height: 36px;
+        width: 140px;
+        border: none;
+        border-radius: 18px;
+        font-weight: bold;
+        margin-left: 15px;
+        transition: background-color 0.15s;
+      }
+
+      .amazon-btn:hover {
+        background-color: rgb(250, 210, 10);
+      }
+
+      .git-btn{
+        background-color: rgb(46, 164, 79);
+        color: white;
+        height: 36px;
+        width: 85px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        margin-left: 15px;
+        transition: box-shadow 0.15s;
+      }
+
+      .git-btn:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .bootstrap-btn1{
+        background-color: rgb(121, 82, 179);
+        color: white;
+        font-weight: bold;
+        height: 36px;
+        width: 110px;
+        border: none;
+        border-radius: 2px;
+        margin-left: 15px;
+        margin-right: 8px;
+        transition: background-color 0.15s;
+      }
+
+      .bootstrap-btn1:hover {
+        background-color: rgb(109, 59, 184);
+      }
+
+      .bootstrap-btn2{
+        background-color: white;
+        color: rgb(108, 117, 125);
+        font-weight: bold;
+        height: 36px;
+        width: 100px;
+        border: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        transition: background-color 0.15s, color 0.15s;
+      }
+
+      .bootstrap-btn2:hover {
+        background-color: rgb(108, 117, 125);
+        color: white;
+      }
+
+      .linkedin-btn1{
+        background-color: rgb(10, 102, 194);
+        color: white;
+        height: 36px;
+        width: 220px;
+        border: none;
+        font-weight: bold;
+        border-radius: 18px;
+        margin-left: 15px;
+        margin-right: 8px;
+        transition: background-color 0.15s;
+      }
+
+      .linkedin-btn1:hover {
+        background-color: rgb(5, 82, 158);
+      }
+
+      .linkedin-btn2{
+        background-color: white;
+        color: rgb(10, 102, 194);
+        border: solid;
+        border-width: 1px;
+        font-weight: bold;
+        height: 36px;
+        width: 70px;
+        border-color: rgb(10, 102, 194);
+        border-radius: 18px;
+        transition: border-width 0.15s, background-color 0.15s;
+      }
+
+      .linkedin-btn2:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-width: 2px;
+      }
+
+      .amazon-link{
+        color: rgb(0, 113, 133);
+        transition: color 0.15s;
+      }
+
+      .amazon-link:hover {
+        color: rgb(255, 164, 28);
+      }
+
+      .nike-title{
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nike-price{
+        color: rgb(0, 118, 0);
+        font-weight: bold;
+      }
+
+      .addcart-btn{
+        background-color: rgb(255, 216, 20);
+        height: 36px;
+        width: 140px;
+        border: none;
+        border-radius: 18px;
+        font-weight: bold;
+        margin-left: 8px;
+        transition: background-color 0.15s;
+      }
+      
+      .addcart-btn:hover {
+        background-color: rgb(250, 210, 10);
+      }
+
+      .addcart-btn:active {
+        opacity: 0.7;
+      }
+
+      .buynow-btn{
+        background-color: rgb(255, 164, 28);
+        height: 36px;
+        width: 140px;
+        border: none;
+        border-radius: 18px;
+        font-weight: bold;
+        transition: background-color 0.15s;
+      }
+      
+      .buynow-btn:hover {
+        background-color: rgb(235, 144, 8);
+      }
+
+      .buynow-btn:active {
+        opacity: 0.7;
+      }
+
+      .back-btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      .next-btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+      }
+
+      .stretch-btn {
+        background-color: green;
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: padding-top 1s, padding-bottom 1s, padding-left 1s, padding-right 1s;
+      }
+
+      .stretch-btn:hover {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+
+      .shadow-btn {
+        background-color: green;
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .shadow-btn:active {
+        margin-left: 5px;
+        margin-right: 5px;
+        box-shadow: none;
+      }
+
+      .threes-btn {
+        background-color: green;
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+        transition: padding 0.15s, margin 0.15;
+      }
+
+      .threes-btn:hover {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+      .tahoma-text {
+        font-family: Tahoma;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .deals-text {
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .sales-text {
+        font-family: Arial;
+        font-size: 16px;
+        font-style: italic;
+        color: red;
+        margin-top: 0;
+      }
+
+      .course-text {
+        font-family: Verdana;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .subtitle-text {
+        font-family: Verdana;
+        font-size: 15px;
+        color: gray;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .description-text {
+        font-family: Verdana;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 18px;
+        width: 285px;
+      }
+
+      .getstarted-btn  {
+        font-family: Verdana;
+        background-color: rgb(34,139,34);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0;
+      }
+
+      .question-text {
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .apple-text {
+        font-family: Arial;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20;
+      }
+
+      .learn-text {
+        font-family: Arial;
+        font-size: 18px;
+        color: rgb(35, 111, 187);
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML and CSS Challenge Exercises</h1>
+    <h2>Lesson 1 Exercises - HTML Basics</h2>
+    <p>
+      (A) Create a button with the text "Click" inside.
+      <button>Click</button>
+    </p>
+    <p>
+      (B) Create buttons. One with your name and one with your favorite food.
+      <button>Anonymous</button>
+      <button>Chicken Adobo</button>
+    </p>
+    <p>
+      (C) Create a paragraph with the text "Hello, World!" inside.
+    </p>
+    <p>Hello World!</p>
+    <p>Today, I watched youtube videos about web development and did a practice coding exercises.</p>
+    <p>
+      (D) Create a paragraph below the previous paragraph and write something you did today.
+    </p>
+    <p>
+      (E) Create a link to google.com (or a similar website for your country).
+    </p>
+    <a href="https://www.google.com/">Search with google</a>
+    <p>
+      (F) Make the link from the previous exercise E open in a new tab.
+    </p>
+    <a href="https://www.google.com/" target="_blank">Search with google 2</a>
+
+    <h2>Lesson 2 & 3 Exercises - CSS Basics, Hovers, Transitions, Shadows</h2>
+    <p>
+      (A) Use CSS to recreate buttons from famous websites.
+    </p>
+    <p>
+      (1) Uber
+      <button class="uber-btn">Request now</button>
+    </p>
+    <p>
+      (2) Amazon
+      <button class="amazon-btn">Add to Cart</button>
+    </p>
+    <p>
+      (3) Github
+      <button class="git-btn">Sign up</button>
+    </p>
+    <p>
+      (4) Bootstrap
+      <button class="bootstrap-btn1">Get started</button>
+      <button class="bootstrap-btn2">Download</button>
+    </p>
+    <p>
+      (5) LinkedIn
+      <button class="linkedin-btn1">Apply on company website</button>
+      <button class="linkedin-btn2">Save</button>
+    </p>
+
+    <h3>Challenge Exercise</h3>
+    <a class="amazon-link" href="https://www.amazon.com/" target="_blank">Back to Amazon</a>
+    <p class="nike-title">Nike Black Running Shoes</p>
+    <p class="nike-price">$39 - in stock.</p>
+    <p>Free delivery tomorrow.</p>
+    <button class="addcart-btn">Add to Cart</button>
+    <button class="buynow-btn">Buy now</button>
+
+    <h3>Challenge Exercise Lesson 4</h3>
+    <p>Pagination</p>
+    <button class="back-btn">Back</button>
+    <a href="https://www.google.com/" target="_blank">1</a>
+    <a href="https://www.google.com/" target="_blank">2</a>
+    <a href="https://www.google.com/" target="_blank">3</a>
+    <a href="https://www.google.com/" target="_blank">4</a>
+    <a href="https://www.google.com/" target="_blank">5</a>
+    <button class="next-btn">Next</button>
+
+    <p>Stretch</p>
+    <button class="stretch-btn">Stretch</button>
+
+    <p>3D Click</p>
+    <button class="shadow-btn">Shadow</button>
+
+    <p>Margin and padding together</p>
+    <button class="threes-btn">One</button>
+    <button class="threes-btn">Two</button>
+    <button class="threes-btn">Three</button>
+
+    <h2>Lesson 5 Exercises - Text Styles</h2>
+    <p>Recreate the text styles</p>
+    <p>Font - Tahoma</p>
+    <p class="tahoma-text">This is Tahoma Font</p>
+
+    <p>Font - Arial</p>
+    <p class="deals-text">Biggest Deals of the Year!</p>
+    <p class="sales-text">Sales end Tuesday</p>
+
+    <p>Font - Verdana</p>
+    <p class="course-text">HTML CSS Course</p>
+    <p class="subtitle-text">Beginner to Pro</p>
+    <p class="description-text">In this course, we'll learn the skills you need to become a developer.</p>
+    <button class="getstarted-btn">Get Started</button>
+
+    <p>Font - Arial</p>
+    <p class="question-text">Shopping for your business?</p>
+    <p class="apple-text">See how Apple at Work can help.</p>
+    <p class="learn-text">Learn more &#62;</p>
+  </body>
+</html>
