@@ -2,8 +2,188 @@
 <html>
   <head>
     <title>Lesson 9</title>
+    <style>
+      .red-square {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+
+      .green-circle {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+      }
+
+      .first-div {
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
+        width: 300px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+
+      .second-div {
+        background-color: rgb(53, 57, 53);
+        width: 400px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+      }
+
+      .install-text {
+        color: white;
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .add-text {
+        color: gray;
+        font-family: Arial;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      
+      .twitter-div {
+        width: 420px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 10px;
+      }
+
+      .twitter-profile {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      .twitter-text {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 100px;
+        border: none;
+        vertical-align: middle;
+      }
+
+      .twitter-btn {
+        background-color: rgb(28, 155, 240);
+        color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border: none;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .dogs-div  {
+        width: 150px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+      .first-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 7px;
+      }
+
+      .name-text {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 7px;
+        padding-left: 5px;
+      }
+
+      .friends-text {
+        color: gray;
+        font-family: Arial;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 7px;
+        padding-left: 5px;
+      }
+
+      .addfriend-btn {
+        background-color: #1B74E4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
-    
+    <h3>Lesson 9 Exercises - The "div" Element></h3>
+    <h4>(A) Create a "div" and turn it into a red square.</h4>
+    <div class="red-square">RED</div>
+
+    <h4>(B) Create a "div" and turn it into a green circle.</h4>
+    <div class="green-circle">GREEN</div>
+
+    <h4>(C) Rereate the design.</h4>
+    <div class="first-div">
+      <p>Satisfied with our service?</p>
+      <button>Yes</button>
+      <button>No</button>
+    </div>
+
+    <h4>(D) Recreate the design using "div" with two paragraphs inside.</h4>
+    <div class="second-div">
+      <p class="install-text">Install Youtube Music</p>
+      <p class="add-text">Add Youtube Music to your desktop for quick and easy access.</p>
+    </div>
+
+    <h4>(E) Take the twitter design in Lesson 7 and wrap it in a div. Give it a shadow.</h4>
+    <div class="twitter-div">
+      <img class="twitter-profile" src="boa.jpg">
+      <input class="twitter-text" type="text" placeholder="What's happening?">
+      <button class="twitter-btn">Tweet</button>
+    </div>
+
+    <h3>Challenge Exercise</h3>
+    <div class="dogs-div">
+      <img class="first-image" src="pug.jpg">
+      <p class="name-text">Pug</p>
+      <p class="friends-text">2 mutual friends</p>
+      <button class="addfriend-btn">Add Friend</button>
+    </div>
+    <div class="dogs-div">
+      <img class="first-image" src="corgi.jpg">
+      <p class="name-text">Corgi</p>
+      <p class="friends-text">3 mutual friends</p>
+      <button class="addfriend-btn">Add Friend</button>
+    </div>
+    <div class="dogs-div">
+      <img class="first-image" src="bully.jpg">
+      <p class="name-text">American Bully</p>
+      <p class="friends-text">4 mutual friends</p>
+      <button class="addfriend-btn">Add Friend</button>
+    </div>
   </body>
 </html>
