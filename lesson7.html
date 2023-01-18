@@ -22,6 +22,89 @@
         object-position: center;
         border-radius: 100px;
       }
+
+      .first-box {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+      }
+
+      .second-box {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 200px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .email-text {
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .third-box {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 200px;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .policy-text {
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      .first-btn {
+        background-color: rgb(14, 118, 168);
+        color: white;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 157px;
+        padding-right: 157px;
+        margin-top: 0;
+        border-radius: 80px;
+      }
+
+      .twitter-profile {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      .twitter-text {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 100px;
+        border: none;
+        vertical-align: middle;
+      }
+
+      .twitter-btn {
+        background-color: rgb(28, 155, 240);
+        color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border: none;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     </style>
   </head>
   <body>
@@ -34,5 +117,23 @@
 
     <p>(C) Make the image a circle using border-radius.</p>
     <img class="third-image" src="boa.jpg">
+    
+    <h3>Create a textbox</h3>
+    <p>With rounded corners</p>
+    <input class="first-box" type="text" placeholder="Search">
+
+    <p>With a shadow and no border.</p>
+    <input class="second-box" type="text" placeholder="Search Google or type a URL">
+
+    <p>LinkedIn signup</p>
+    <p class="email-text">Email</p>
+    <input class="third-box" type="text">
+    <p class="policy-text">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+    <button class="first-btn">Agree & Join</button>
+
+    <p>Twitter text box</p>
+    <img class="twitter-profile" src="boa.jpg">
+    <input class="twitter-text" type="text" placeholder="What's happening?">
+    <button class="twitter-btn">Tweet</button>
   </body>
 </html>
