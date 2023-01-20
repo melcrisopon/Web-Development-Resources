@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 11</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .first-grid {
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+
+      .golden-div {
+        background-color: goldenrod;
+      }
+      
+      .rosy-div {
+        background-color: rosybrown;
+      }
+
+      .second-div {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+      
+      .third-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+
+      .fb-grid {
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        column-gap: 20px;
+      }  
+
+      .dogs-div  {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .first-image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 7px;
+      }
+
+      .name-text {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 7px;
+        padding-left: 5px;
+      }
+
+      .friends-text {
+        color: gray;
+        font-family: Arial;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 7px;
+        padding-left: 5px;
+      }
+
+      .addfriend-btn {
+        background-color: #1B74E4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Lesson 11 Exercises - CSS Grid</h4>
+    <h3>(A) Create a grid with 2 columns with widths of 200px and 75px.</h3>
+    <div class="first-grid">
+      <div class="golden-div">
+        <p>200px</p>
+      </div>
+      <div class="rosy-div">
+        <p>75px</p>
+      </div>
+    </div>
+
+    <h3>(B) Create a grid with 3 columns. Widths = 50px | remaining space | 75px.</h3>
+    <div class="second-div">
+      <div class="rosy-div">
+        <p>col-1</p>
+      </div>
+      <div class="golden-div">
+        <p>col-2</p>
+      </div>
+      <div class="rosy-div">
+        <p>col-3</p>
+      </div>
+    </div>
+
+    <h3>(C) Create a grid with 4 equal columns that take up the entire page. Space between columns = 20px, space between rows = 10px</h3>
+    <div class="third-grid">
+      <div class="golden-div">
+        <p>col-1</p>
+      </div>
+      <div class="rosy-div">
+        <p>col-2</p>
+      </div>
+      <div class="golden-div">
+        <p>col-3</p>
+      </div>
+      <div class="rosy-div">
+        <p>col-4</p>
+      </div>
+      <div class="golden-div">
+          <p>col-1</p>
+        </div>
+        <div class="rosy-div">
+          <p>col-2</p>
+        </div>
+        <div class="golden-div">
+          <p>col-3</p>
+        </div>
+        <div class="rosy-div">
+          <p>col-4</p>
+        </div>
+    </div>
+
+    <div class="fb-grid">
+      <div class="dogs-div">
+        <img class="first-image" src="pug.jpg">
+        <p class="name-text">Pug</p>
+        <p class="friends-text">2 mutual friends</p>
+        <button class="addfriend-btn">Add Friend</button>
+      </div>
+      <div class="dogs-div">
+        <img class="first-image" src="corgi.jpg">
+        <p class="name-text">Corgi</p>
+        <p class="friends-text">3 mutual friends</p>
+        <button class="addfriend-btn">Add Friend</button>
+      </div>
+      <div class="dogs-div">
+        <img class="first-image" src="bully.jpg">
+        <p class="name-text">American Bully</p>
+        <p class="friends-text">4 mutual friends</p>
+        <button class="addfriend-btn">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>
