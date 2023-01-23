@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 12</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .first-box {
+        display: flex;
+        flex-direction: row;
+      }
+      .second-box {
+        display: flex;
+        flex-direction: row;
+      }
+      .third-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .fourth-box {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .box200 {
+        background-color: blue;
+        color: white;
+        width: 200px;
+      }
+      .box75 {
+        background-color: red;
+        color: white;
+        width: 75px;
+      }
+      .box50 {
+        background-color: red;
+        color: white;
+        width: 50px;
+      }
+      .space-box {
+        background-color: blue;
+        color: white;
+        flex: 1;
+      }
+      .red-box {
+        background-color: red;
+        color: white;
+      }
+      .blue-box1 {
+        background-color: blue;
+        color: white;
+      }
+      .blue-box2 {
+        background-color: blue;
+        color: white;
+      }
+
+      .container {
+        width: 250px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 5px;
+      }
+      .menu-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      .number-text {
+        background-color: rgb(0, 106, 255);
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Lesson 12 Exercies - Flexbox</h3>
+    <h4>(A) Create a flexbox with 2 items. Widths = 200px | 75px</h4>
+    <div class="first-box">
+      <div class="box200">
+        <p>200px</p>
+      </div>
+      <div class="box75">
+        <p>75px</p>
+      </div>
+    </div>
+
+    <h4>(B) A flexbox with 3 items. Widths = 50px | remaining space | 75px</h4>
+    <div class="second-box">
+      <div class="box50">
+        <p>50px</p>
+      </div>
+      <div class="space-box">
+        <p>remaining space (flex 1)</p>
+      </div>
+      <div class="box75">
+        <p>75px</p>
+      </div>
+    </div>
+
+    <h4>(C) A flexbox with 4 items, spread evenly across the page.</h4>
+    <div class="third-box">
+      <div class="red-box">
+        <p>section 1</p>
+      </div>
+      <div class="red-box">
+        <p>section 2</p>
+      </div>
+      <div class="red-box">
+        <p>section 3</p>
+      </div>
+      <div class="red-box">
+        <p>section 4</p>
+      </div>
+    </div>
+
+    <h4>(D) Create the flexbox with height = 50px and a gray border.</h4>
+    <div class="fourth-box">
+      <div class="blue-box1">
+        <p>section 1</p>
+      </div>
+      <div class="blue-box2">
+        <p>section 2</p>
+      </div>
+    </div>
+
+    <h4>Challenge Exercies</h4>
+    <div class="container">
+      <div class="menu-box">
+        <div>Home</div>
+        <div class="number-text">14</div>
+      </div>
+      <div  class="menu-box">
+        <div>Notifications</div>
+        <div class="number-text">4</div>
+      </div>
+      <div class="menu-box">
+        <div>Messages</div>
+        <div class="number-text">5</div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="home">Home</div>
+      <input class="search" type="text" placeholder="Search">
+      <button class="download-btn">Download</button>
+    </div>
+  </body>
+</html>
