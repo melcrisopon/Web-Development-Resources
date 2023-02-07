@@ -83,6 +83,92 @@
         padding-right: 10px;
         border-radius: 10px;
       }
+
+      .header {
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        justify-content: space-between;
+      }
+      .home{
+        color: white;
+        font-weight: bold;
+        margin-left: 18px;
+      }
+      .search {
+        font-weight: bold;
+        width: 500px;
+        height: 25px;
+        border: none;
+        border-radius: 25px;
+        padding-left: 20px;
+      }
+      .download-btn {
+        background-color: blueviolet;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-radius: 5px;
+        padding: 8px;
+        margin-right: 10px;
+      }
+
+      .first-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 7px;
+        border-radius: 100px;
+      }
+      .name-text {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 7px;
+        padding-left: 5px;
+      }
+
+      .friends-text {
+        color: gray;
+        font-family: Arial;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 7px;
+        padding-left: 5px;
+      }
+
+      .addfriend-btn {
+        background-color: #1B74E4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      
+      .follow-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .follow-container {
+        margin: 10px;
+        width: 300px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 5px;
+      }  
     </style>
   </head>
   <body>
@@ -149,6 +235,35 @@
       <div class="menu-box">
         <div>Messages</div>
         <div class="number-text">5</div>
+      </div>
+    </div>
+
+    <div class="follow-container">
+      <div class="follow-flex">
+        <img class="first-image" src="pug.jpg">
+        <div>
+          <p class="name-text">Pug</p>
+          <p class="friends-text">2 mutual friends</p>
+        </div>
+        <button class="addfriend-btn">Add Friend</button>
+      </div>
+
+      <div class="follow-flex">
+        <img class="first-image" src="corgi.jpg">
+        <div>
+          <p class="name-text">Corgi</p>
+          <p class="friends-text">3 mutual friends</p>
+        </div>
+        <button class="addfriend-btn">Add Friend</button>
+      </div>
+
+      <div class="follow-flex">
+        <img class="first-image" src="bully.jpg">
+        <div>
+          <p class="name-text">American Bully</p>
+          <p class="friends-text">4 mutual friends</p>
+        </div>
+        <button class="addfriend-btn">Add Friend</button>
       </div>
     </div>
 
