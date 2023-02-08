@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 13</title>
+
+    <style>
+      .flex1 {
+        display: flex;
+        height: 50px;
+      }
+
+      .col1 {
+        background-color: lightgreen;
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item1{
+        background-color: black;
+        color: white;
+      }
+
+      .col2 {
+        background-color: lightpink;
+        width: 200px;
+      }
+
+      .flex2 {
+        display: flex;
+        height: 50px;
+      }
+
+      .col3 {
+        background-color: lightgreen;
+        width: 100px;
+      }
+      .col4 {
+        background-color: lightpink;
+        width: 200px;
+      }
+
+      .flex3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .row2{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Lesson 13 Exercises - Nested Flexbox</h3>
+    <h4>(A) Create a flexbox with 2 elements (width 100px and 200px). Then make the first element a flexbox.</h4>
+    <div class="flex1">
+      <div class="col1">
+        <div class="item1">item1</div>
+      </div>
+      <div class="col2"></div>
+    </div>
+
+    <h4>(B) Similar to exercise A. Use nested flexbox.</h4>
+    <div class="flex2">
+      <div class="col3"></div>
+      <div class="col4">
+        <div class="row1">row1</div>
+        <div class="flex3">
+            <div class="row2">row2</div>
+            <div class="row2">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
